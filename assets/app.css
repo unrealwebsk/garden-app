@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+   --green-color: #9ae6b4;
+ }
+
+* {
+   font-family: 'Nunito', sans-serif;
+}
+
+::selection {
+   background: var(--green-color);
+ }
+
+#sidebar-menu {
+   margin-left: -16rem;
+   transition: margin-left 500ms ease-in-out;
+   -webkit-transition: margin-left 500ms ease-in-out;
+   -moz-transition: margin-left 500ms ease-in-out;
+   -ms-transition: margin-left 500ms ease-in-out;
+   -o-transition: margin-left 500ms ease-in-out;
+}
+
+#sidebar-menu.active {
+   margin-left: 0;
+   transition: margin-left 500ms ease-in-out;
+   -webkit-transition: margin-left 500ms ease-in-out;
+   -moz-transition: margin-left 500ms ease-in-out;
+   -ms-transition: margin-left 500ms ease-in-out;
+   -o-transition: margin-left 500ms ease-in-out;
+}
+
+.title {
+   position: relative;
+}
+
+.title::after {
+   content: '';
+   z-index: -1;
+   position: absolute;
+   bottom: 3px;
+   left: 0;
+   width: 75px;
+   height: 15px;
+   background-color: var(--green-color);
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+}
+
+/* Hero */
+
+.hero {
+   height: 60vh;
+   background-image: url('https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* Overlay */
+
+.overlay {
+   display: none;
+}
+
+.overlay.active {
+   display: block;
+}
+
+/* Glider */
+
+.glider-dot:focus {
+   outline: none;
+}
+
+.glider-next {
+   right: 40px;
+   left: auto;
+   top: 50%;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+}
+
+.glider-prev {
+   left: 40px;
+   right: auto;
+   top: 50%;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+}
+
+.glider-track {
+   height: 60vh;
+}
